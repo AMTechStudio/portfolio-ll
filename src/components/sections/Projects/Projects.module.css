@@ -1,0 +1,85 @@
+.section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--spacing-6xl);
+  background-color: var(--color-section-bg);
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xxxl);
+}
+
+.titleContainer {
+  padding: var(--spacing-xs) var(--spacing-xxl);
+}
+
+.title {
+  width: 45%;
+  font-family: var(--font-family-heading);
+  font-weight: var(--weight-bold);
+  font-size: var(--font-size-4xl);
+  color: var(--color-subtitle);
+  margin: 0;
+  line-height: var(--line-height-7xl);
+  border-bottom: 2px solid var(--color-stroke);
+}
+
+.controlsRow {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacing-sm);
+  padding-right: var(--spacing-7xl);
+}
+
+.arrowButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.arrowButton:active {
+  transform: scale(0.9);
+}
+
+.arrowButton:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.arrowIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.projectsSlider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-6xl);
+  overflow-x: auto;
+  height: 668px;
+  width: 100%;
+  max-width: 1028px;
+  margin: 0 auto;
+  scroll-snap-type: x mandatory;
+  margin-bottom: var(--spacing-sm);
+}
+
+.hideScrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hideScrollbar::-webkit-scrollbar {
+  display: none;
+}
