@@ -1,17 +1,27 @@
-import styles from './Navbar.module.css'
+import { Link, NavLink } from 'react-router-dom'
 import { SpanishFlagIcon, ChevronDownIcon } from '@/components/Icons'
+
+import styles from './Navbar.module.css'
 
 export function Navbar() {
   return (
     <nav className={styles.navbar}>
-      <span className={styles.brand}>LUCIANA LARRAMENDY</span>
+      <Link to="/" className={styles.brand}>
+        LUCIANA LARRAMENDY
+      </Link>
 
       <div className={styles.navContent}>
         <ul className={styles.navLinks}>
           <li>
-            <a href="#" className={styles.navLinkActive}>
+            <NavLink
+              to="/"
+              end
+              className={({ isActive }) =>
+                isActive ? styles.navLinkActive : styles.navLink
+              }
+            >
               Home
-            </a>
+            </NavLink>
           </li>
           <li>
             <a href="#" className={styles.navLink}>
@@ -19,9 +29,9 @@ export function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#" className={styles.navLink}>
+            <Link to="/#proyectos" className={styles.navLink}>
               Proyectos
-            </a>
+            </Link>
           </li>
         </ul>
 

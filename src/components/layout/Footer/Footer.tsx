@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from './Footer.module.css'
 import { LinkedInIcon, CloseEnvelopeIcon } from '@/components/Icons'
 
@@ -18,7 +19,11 @@ export function Footer() {
               >
                 <LinkedInIcon size={24} />
               </a>
-              <a href="mailto:contact@example.com" className={styles.socialLink} aria-label="Email">
+              <a
+                href="mailto:contact@example.com"
+                className={styles.socialLink}
+                aria-label="Email"
+              >
                 <CloseEnvelopeIcon size={24} />
               </a>
             </div>
@@ -27,14 +32,14 @@ export function Footer() {
           <div className={styles.links}>
             <ul className={styles.linkColumn}>
               <li>
-                <a href="/" className={styles.link}>
+                <Link to="/" className={styles.link}>
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/proyectos" className={styles.link}>
+                <Link to="/#proyectos" className={styles.link}>
                   Proyectos
-                </a>
+                </Link>
               </li>
             </ul>
             <ul className={styles.linkColumn}>
