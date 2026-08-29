@@ -1,0 +1,154 @@
+:root {
+  /* ==========================================================================
+     1. COLOR PRIMITIVES (Paleta Global de Referencia)
+     ========================================================================== */
+
+  /* Neutrales */
+  --color-white-100: #ffffff;
+  --color-white-200: #e3e2e0;
+  --color-gray-100: rgba(199, 198, 194, 0.5);
+  --color-gray-200: #dbdad8;
+  --color-gray-300: #646672;
+
+  /* Overlay */
+  --color-overlay: rgba(36, 30, 28, 0.3);
+
+  /* Primary (Rampa de Rojos de Marca) */
+  --color-primary-50: #dac4c4;
+  --color-primary-100: #d06161;
+  --color-primary-200: #c05353;
+  --color-primary-300: #a03737;
+  --color-primary-400: #811c1c;
+  --color-primary-500: #610000; /* Color Base */
+  --color-primary-600: #4e0000;
+  --color-primary-700: #3a0000;
+  --color-primary-800: #270000;
+  --color-primary-900: #130000;
+
+  /* Gray (Escala de Grises Secundaria) */
+  --color-secondary-100: #cacaca;
+  --color-secondary-200: #adadad;
+  --color-secondary-300: #8f8f8f;
+  --color-secondary-400: #727272;
+  --color-secondary-500: #545454;
+  --color-secondary-600: #434343;
+  --color-secondary-700: #323232;
+  --color-secondary-800: #222222;
+  --color-secondary-900: #111111;
+
+  /* Feedback */
+  --color-green-100: #70c053;
+  --color-red-100: #ac1519;
+
+  /* ==========================================================================
+     2. SEMANTIC COLOR MAPPINGS (Mapeo de Uso Funcional)
+     ========================================================================== */
+
+  /* Text Colors */
+  --text-title-primary: var(--color-primary-500);
+  --text-body-secondary: var(--color-secondary-600);
+  --text-subtitle-secondary: var(--color-secondary-800);
+  --text-accent-default: var(--color-secondary-300);
+
+  /* Button Colors */
+  --button-primary-bg-default: var(--color-primary-500);
+  --button-primary-bg-hover: rgba(97, 0, 0, 0.15);
+  --button-primary-bg-active: var(--color-primary-700);
+
+  /* Surfaces */
+  --surface-background: var(--color-white-200);
+
+  /* Icons */
+  --icon-primary-default: var(--color-secondary-300);
+  --icon-primary-hover: var(--color-secondary-400);
+  --icon-primary-active: var(--color-secondary-600);
+
+  /* Strokes & Borders */
+  --stroke-default: var(--color-secondary-400);
+  --border-thin: 1px;
+
+  /* ==========================================================================
+     3. LAYOUT & SPACING (Unidades en Píxeles)
+     ========================================================================== */
+  --spacing-xxs: 8px;
+  --spacing-xs: 16px;
+  --spacing-sm: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 40px;
+  --spacing-xxl: 48px;
+  --spacing-xxxl: 56px;
+  --spacing-4xl: 64px;
+  --spacing-5xl: 72px;
+  --spacing-6xl: 80px;
+  --spacing-7xl: 160px;
+  --spacing-8xl: 240px;
+  --spacing-9xl: 320px;
+
+  /* Component-specific spacing */
+  --max-width-section: 1440px;
+  --spacing-learning-grid: 700px;
+
+  /* ==========================================================================
+     4. BORDER RADIUS (Radios de Esquina)
+     ========================================================================== */
+  --corner-radius-xxs: 8px;
+  --corner-radius-xs: 16px;
+  --corner-radius-sm: 24px;
+  --corner-radius-md: 32px;
+  --corner-radius-lg: 40px;
+  --corner-radius-xl: 48px;
+  --corner-radius-xxl: 56px;
+
+  /* ==========================================================================
+     5. TYPOGRAPHY (Especificaciones de Texto)
+     ========================================================================== */
+
+  /* Families */
+  --font-family-heading: 'Karla', sans-serif;
+  --font-family-body: 'Solway', serif;
+  --font-family-numbers: 'Scada', sans-serif;
+  --font-family-cutive: 'Cutive Mono', monospace;
+  --font-family-corbel: 'Corbel', sans-serif;
+
+  /* Font Sizes */
+  --font-size-xs: 18px;
+  --font-size-sm: 22px;
+  --font-size-md: 24px;
+  --font-size-lg: 32px;
+  --font-size-xl: 39px;
+  --font-size-2xl: 52px;
+  --font-size-3xl: 69px;
+  --font-size-4xl: 93px;
+  --font-size-5xl: 150px;
+
+  /* Line Heights */
+  --line-height-xs: 16px;
+  --line-height-sm: 24px;
+  --line-height-md: 32px;
+  --line-height-lg: 36px;
+  --line-height-xl: 48px;
+  --line-height-2xl: 72px;
+  --line-height-3xl: 56px;
+  --line-height-4xl: 64px;
+  --line-height-5xl: 72px;
+  --line-height-6xl: 80px;
+  --line-height-7xl: 88px;
+  --line-height-8xl: 160px;
+
+  /* Letter Spacing */
+  --letter-spacing-normal: 0px;
+
+  /* Font Weights (Solway) */
+  --font-weight-solway-light: 300;
+  --font-weight-solway-regular: 400;
+  --font-weight-solway-medium: 500;
+  --font-weight-solway-bold: 700;
+  --font-weight-solway-extrabold: 800;
+
+  /* Font Weights (Karla) */
+  --font-weight-karla-light: 300;
+  --font-weight-karla-regular: 400;
+  --font-weight-karla-medium: 500;
+  --font-weight-karla-semibold: 600;
+  --font-weight-karla-bold: 600; /* Mapeado a 600 según la variable de Figma */
+}
