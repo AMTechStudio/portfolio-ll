@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Scada:wght@400;700&display=swap');
-
 /* ========================================
    FONT-FACE DECLARATIONS
    ======================================== */
@@ -43,4 +40,12 @@
   font-weight: 400;
   font-display: swap;
   src: url('/fonts/Scada-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Cutive Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/CutiveMono-Regular.woff2') format('woff2');
 }
