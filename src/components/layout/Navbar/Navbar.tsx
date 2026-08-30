@@ -1,9 +1,15 @@
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import { SpanishFlagIcon, ChevronDownIcon } from '@/components/Icons'
+import { Button } from '@/components/ui/Button/Button'
 
 import styles from './Navbar.module.css'
 
 export function Navbar() {
+  const location = useLocation()
+  const isHomeActive = location.pathname === '/' && location.hash === ''
+  const isProjectsActive =
+    location.pathname === '/' && location.hash === '#projects'
+
   return (
     <nav className={styles.navbar}>
       <Link to="/" className={styles.brand}>
@@ -16,9 +22,7 @@ export function Navbar() {
             <NavLink
               to="/"
               end
-              className={({ isActive }) =>
-                isActive ? styles.navLinkActive : styles.navLink
-              }
+              className={isHomeActive ? styles.navLinkActive : styles.navLink}
             >
               Home
             </NavLink>
@@ -29,21 +33,24 @@ export function Navbar() {
             </a>
           </li>
           <li>
-            <Link to="/#proyectos" className={styles.navLink}>
+            <NavLink
+              to="/#projects"
+              className={
+                isProjectsActive ? styles.navLinkActive : styles.navLink
+              }
+            >
               Proyectos
-            </Link>
+            </NavLink>
           </li>
         </ul>
 
         <button type="button" className={styles.languageSelector}>
           <SpanishFlagIcon size={24} className={styles.flagIcon} />
           <span>Español</span>
-          <ChevronDownIcon size={16} />
+          <ChevronDownIcon size={16} className={styles.chevronIcon} />
         </button>
 
-        <button type="button" className={styles.ctaButton}>
-          Contacto
-        </button>
+        <Button variant="primary">Contacto</Button>
       </div>
     </nav>
   )

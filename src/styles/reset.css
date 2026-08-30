@@ -7,12 +7,19 @@
 }
 
 html {
+  min-height: 100%;
   /* Improve font rendering */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
-html,
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 main {
   min-height: 100%;
 }
@@ -44,7 +51,6 @@ svg {
 
 button {
   all: unset;
-  cursor: pointer;
 }
 
 #root {

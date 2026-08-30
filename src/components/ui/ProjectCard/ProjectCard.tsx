@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { ROUTES } from '@/router/paths'
 import styles from './ProjectCard.module.css'
 
 type ProjectCardProps = {
@@ -9,7 +10,13 @@ type ProjectCardProps = {
   slug: string
 }
 
-export function ProjectCard({ title, description, imageSrc, imageAlt, slug }: ProjectCardProps) {
+export function ProjectCard({
+  title,
+  description,
+  imageSrc,
+  imageAlt,
+  slug,
+}: ProjectCardProps) {
   return (
     <article className={styles.card}>
       <div className={styles.content}>
@@ -27,7 +34,7 @@ export function ProjectCard({ title, description, imageSrc, imageAlt, slug }: Pr
           </div>
         </div>
 
-        <Link to={`/proyecto/${slug}`} className={styles.cta}>
+        <Link to={ROUTES.project(slug)} className={styles.cta}>
           <span className={styles.ctaLine} />
           <span className={styles.ctaText}>Ver más</span>
         </Link>

@@ -7,7 +7,7 @@ import styles from './EstudioTerra.module.css'
 
 const articles = [
   {
-    id: 'servicios',
+    id: 'services',
     title: 'Servicios',
     description:
       'La página de Servicios emplea un diseño de bloques alternados para presentar tres áreas clave (Dirección de obra, Cálculo estructural, Visualización 3D). Utiliza descripciones concisas que se intercalan con fotografías contextuales demostrando la aplicación real de cada servicio.',
@@ -15,14 +15,14 @@ const articles = [
     arrowCount: 1,
   },
   {
-    id: 'proyectos',
+    id: 'projects',
     title: 'Proyectos',
     description:
       'Se dividieron los proyectos en residenciales y comerciales para guiar al usuario en su búsqueda. A solicitud del estudio, se detalló el concepto, los objetivos y el diseño de cada proyecto intercalando planos técnicos con fotografías para ofrecer una experiencia atractiva y completa.',
     arrowCount: 2,
   },
   {
-    id: 'contacto',
+    id: 'contact',
     title: 'Contacto',
     description:
       'Con el contraste de color dividimos las opciones de contacto que tiene el usuario. El formulario integrado destaca sobre el fondo oscuro para fomentar el envío de mensajes desde la web, mientras que en la sección inferior el usuario encuentra formas de contacto tradicionales y la ubicación física del estudio.',
@@ -30,7 +30,7 @@ const articles = [
     arrowCount: 2,
   },
   {
-    id: 'nosotros',
+    id: 'us',
     title: 'Nosotros',
     description:
       'Para transmitir confianza y seriedad, la sección "Nosotros" presenta la trayectoria de los miembros del estudio acompañada de sus fotografías. El recorrido visual finaliza estratégicamente en un bloque inferior de alto contraste cromático que aloja el Call to Action (CTA), invitando al usuario a establecer contacto.',
@@ -200,7 +200,7 @@ export function EstudioTerra() {
                     </p>
                   </div>
                   <div className={styles.articleImageBlock}>
-                    {article.id === 'servicios' && (
+                    {article.id === 'services' && (
                       <img
                         className={styles.articleImage}
                         src={article.imageSrc}
@@ -219,8 +219,8 @@ export function EstudioTerra() {
                       />
                     )}
                     {article.imageSrc &&
-                      article.id !== 'servicios' &&
-                      article.id !== 'proyectos' && (
+                      article.id !== 'services' &&
+                      article.id !== 'projects' && (
                         <img
                           className={styles.articleImage}
                           src={article.imageSrc}

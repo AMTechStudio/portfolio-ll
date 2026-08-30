@@ -46,8 +46,7 @@
   background-color: var(--button-primary-bg-default);
   border: none;
   border-radius: var(--corner-radius-sm);
-  width: 160px;
-  height: 40px;
+  padding: var(--spacing-xxs) var(--spacing-xs);
   cursor: pointer;
   text-decoration: none;
   transition: opacity 0.2s ease;

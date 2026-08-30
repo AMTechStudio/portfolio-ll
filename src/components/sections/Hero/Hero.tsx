@@ -1,3 +1,6 @@
+import { Button } from '@/components/ui/Button/Button'
+import { Link } from '@/components/ui/Link/Link'
+
 import styles from './Hero.module.css'
 
 interface HeroProps {
@@ -8,7 +11,14 @@ interface HeroProps {
 export function Hero({ proyectName, descriptionProyect }: HeroProps) {
   return (
     <section className={styles.hero}>
-      <video className={styles.video} autoPlay muted loop playsInline src="/videos/herofinal.mp4" />
+      <video
+        className={styles.video}
+        autoPlay
+        muted
+        loop
+        playsInline
+        src="/videos/herofinal.mp4"
+      />
 
       <div className={styles.content}>
         <div className={styles.textBlock}>
@@ -16,13 +26,11 @@ export function Hero({ proyectName, descriptionProyect }: HeroProps) {
           <p className={styles.name}>{descriptionProyect}</p>
         </div>
 
-        <div className={styles.buttons}>
-          <button type="button" className={styles.primaryButton}>
-            Contacto
-          </button>
-          <button type="button" className={styles.secondaryButton}>
+        <div className={styles.buttonsContainer}>
+          <Button variant="primary">Contacto</Button>
+          <Link variant="secondary" href="#projects">
             Ver proyectos
-          </button>
+          </Link>
         </div>
       </div>
     </section>

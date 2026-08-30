@@ -1,11 +1,7 @@
-import type { ComponentType } from 'react'
+import { Suspense } from 'react'
 import { Navigate, useParams } from 'react-router-dom'
 import { projects } from '@/data/projects'
-import { EstudioTerra } from './estudio-terra/EstudioTerra'
-
-const projectPages: Record<string, ComponentType> = {
-  'estudio-terra': EstudioTerra,
-}
+import { projectPages } from './projectRegistry'
 
 export function ProjectPage() {
   const { slug } = useParams<{ slug: string }>()
@@ -16,5 +12,9 @@ export function ProjectPage() {
     return <Navigate to="/" replace />
   }
 
-  return <PageComponent />
+  return (
+    <Suspense fallback={null}>
+      <PageComponent />
+    </Suspense>
+  )
 }

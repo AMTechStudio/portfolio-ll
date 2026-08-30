@@ -44,7 +44,7 @@ export function Projects() {
   }, [])
 
   return (
-    <section id="proyectos" className={styles.section}>
+    <section id="projects" className={styles.section}>
       <div className={styles.container}>
         <div className={styles.titleContainer}>
           <h2 className={styles.title}>Proyectos</h2>

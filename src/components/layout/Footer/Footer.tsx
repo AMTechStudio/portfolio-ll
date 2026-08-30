@@ -37,7 +37,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/#proyectos" className={styles.link}>
+                <Link to="/#projects" className={styles.link}>
                   Proyectos
                 </Link>
               </li>
@@ -49,7 +49,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/contacto" className={styles.link}>
+                <a href="/contact" className={styles.link}>
                   Contacto
                 </a>
               </li>

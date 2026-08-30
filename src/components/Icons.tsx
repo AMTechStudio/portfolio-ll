@@ -1119,9 +1119,24 @@ export function ChevronDownIcon({ size = 24, fill = 'currentColor', ...props }: 
       height={size}
       {...props}
     >
-      <path d="M1 1L8 8L15 1" stroke={fill} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path fill={fill} d="M18.53 9.53a.75.75 0 0 0 0-1.06H5.47a.75.75 0 0 0 0 1.06l6 6a.75.75 0 0 0 1.06 0z" />
     </svg >)
 }
+
+export function ChevronUpIcon({ size = 24, fill = 'currentColor', ...props }: IconProps) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill={fill}
+      width={size}
+      height={size}
+      {...props}
+    >
+      <path fill={fill} d="M12.53 8.47a.75.75 0 0 0-1.06 0l-6 6a.75.75 0 0 0 0 1.06h13.06a.75.75 0 0 0 0-1.06z" />
+    </svg >)
+}
+
+
 
 export function BurgerMenuIcon({ size = 24, fill = 'currentColor', ...props }: IconProps) {
   return (

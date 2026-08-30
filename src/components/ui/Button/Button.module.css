@@ -1,0 +1,84 @@
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  border-radius: var(--corner-radius-sm);
+  border: none;
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-karla-bold);
+  line-height: 1;
+  padding: var(--spacing-xs) var(--spacing-lg);
+  text-decoration: none;
+  transition:
+    opacity 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-secondary-500);
+  outline-offset: 2px;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn:disabled:hover {
+  opacity: 0.5;
+}
+
+.primary {
+  background-color: var(--button-primary-bg-default);
+  color: var(--color-white-100);
+  border: none;
+}
+
+.secondary {
+  background-color: transparent;
+  color: var(--text-title-primary);
+  border: var(--border-thin) solid var(--text-title-primary);
+}
+
+.primary:visited {
+  color: var(--color-white-100);
+}
+
+.secondary:visited {
+  color: var(--text-title-primary);
+}
+
+.secondary:hover,
+.secondary:visited:hover {
+  background-color: var(--button-primary-bg-default);
+  color: var(--color-white-100);
+  border-color: var(--button-primary-bg-default);
+}
+
+.primary:visited:hover {
+  color: var(--color-white-100);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xxs);
+}

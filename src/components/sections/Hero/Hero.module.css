@@ -1,6 +1,8 @@
 .hero {
   position: relative;
-  isolation: isolate; /* Creates a stacking context so .video (z-index: -1) paints within .hero, above the opaque RootLayout background */
+  /* Creates a stacking context so .video (z-index: -1) paints within
+   .hero, above the opaque RootLayout background */
+  isolation: isolate;
   width: 100%;
   height: 1032px;
   overflow: hidden;
@@ -52,51 +54,10 @@
   line-height: var(--line-height-7xl);
 }
 
-.buttons {
+.buttonsContainer {
   display: flex;
   flex-direction: row;
   gap: var(--spacing-sm);
   padding-left: var(--spacing-xs);
   margin-top: var(--spacing-xl);
-}
-
-.primaryButton {
-  font-family: var(--font-family-heading);
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-karla-bold);
-  color: var(--color-white-100);
-  background-color: var(--button-primary-bg-default);
-  border: none;
-  border-radius: var(--corner-radius-sm);
-  width: 120px;
-  height: 40px;
-  padding: var(--spacing-xxs) var(--spacing-xs);
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-}
-
-.primaryButton:hover {
-  opacity: 0.9;
-}
-
-.secondaryButton {
-  font-family: var(--font-family-heading);
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-karla-bold);
-  color: var(--text-title-primary);
-  background-color: transparent;
-  border: 1px solid var(--text-title-primary);
-  border-radius: var(--corner-radius-sm);
-  width: 150px;
-  height: 40px;
-  padding: var(--spacing-xxs) var(--spacing-xs);
-  cursor: pointer;
-  transition:
-    background-color 0.2s ease,
-    color 0.2s ease;
-}
-
-.secondaryButton:hover {
-  background-color: var(--button-primary-bg-default);
-  color: var(--color-white-100);
 }

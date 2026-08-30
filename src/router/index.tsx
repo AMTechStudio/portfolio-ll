@@ -3,14 +3,15 @@ import { GlobalError } from '@/components/errors/GlobalError/GlobalError'
 import { RootLayout } from '@/components/layout/RootLayout/RootLayout'
 import { HomePage } from '@/pages/home/HomePage'
 import { ProjectPage } from '@/pages/project-page/ProjectPage'
+import { ROUTES } from './paths'
 
 export const router = createBrowserRouter([
   {
     element: <RootLayout />,
     errorElement: <GlobalError />,
     children: [
-      { path: '/', element: <HomePage /> },
-      { path: '/project/:slug', element: <ProjectPage /> },
+      { path: ROUTES.home, element: <HomePage /> },
+      { path: ROUTES.projectPattern, element: <ProjectPage /> },
     ],
   },
 ])

@@ -1,5 +1,4 @@
 .navbar {
-  height: 88px;
   padding: var(--spacing-sm) var(--spacing-6xl);
   display: flex;
   align-items: center;
@@ -42,8 +41,8 @@
 }
 
 .navLinkActive {
-  /* composes: navLink; */
-  color: var(--text-subtitle-secondary);
+  composes: navLink;
+  /* color: var(--text-subtitle-secondary); */
   border-bottom-color: var(--color-primary-600);
 }
 
@@ -63,22 +62,4 @@
 .flagIcon {
   width: 24px;
   height: 24px;
-}
-
-.ctaButton {
-  font-family: var(--font-family-heading);
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-karla-bold);
-  color: var(--color-white-100);
-  background-color: var(--button-primary-bg-default);
-  border: none;
-  border-radius: var(--corner-radius-sm);
-  width: 120px;
-  height: 40px;
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-}
-
-.ctaButton:hover {
-  opacity: 0.9;
 }
