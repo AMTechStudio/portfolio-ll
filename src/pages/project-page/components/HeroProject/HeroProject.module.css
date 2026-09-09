@@ -1,23 +1,21 @@
 .container {
-  max-width: var(--max-width-section);
   display: flex;
   padding: 0 var(--spacing-6xl);
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
+  margin: 0 auto;
+  padding-top: var(--spacing-xl);
 }
 
 .leftColumn {
-  width: 640px;
   position: relative;
   flex-shrink: 0;
 }
 
 .imageWrapper {
   position: relative;
-  height: 865px;
-  width: 600px;
-  margin-top: 40px;
+  width: 100%;
 }
 
 .imageWrapper::after {
@@ -51,7 +49,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xxl);
-  /* width: 560px; */
+  width: 560px;
   height: 610px;
 }
 

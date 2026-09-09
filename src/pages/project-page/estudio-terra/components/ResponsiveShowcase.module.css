@@ -1,0 +1,13 @@
+.responsiveLayout {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-6xl);
+}
+
+.iphoneVideo {
+  height: 635px;
+  flex-shrink: 0;
+  border-radius: var(--corner-radius-sm);
+  object-fit: cover;
+}

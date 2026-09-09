@@ -1,0 +1,7 @@
+.section {
+  padding: 0 var(--spacing-6xl);
+}
+
+.content {
+  padding: 120px 0;
+}

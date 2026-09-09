@@ -1,0 +1,7 @@
+.networkVideo {
+  width: 800px;
+  height: 577px;
+  margin: var(--spacing-6xl) auto 0;
+  display: block;
+  object-fit: cover;
+}
