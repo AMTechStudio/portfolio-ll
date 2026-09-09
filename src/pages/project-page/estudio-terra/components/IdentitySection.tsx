@@ -1,4 +1,5 @@
 import { SectionHeader } from '@/components/ui/SectionHeader/SectionHeader'
+import { ProjectSection } from '@/pages/project-page/components/ProjectSection/ProjectSection'
 import type { IdentityData, IdentityFontId, IdentitySwatchId } from '../data/estudioTerra'
 import styles from './IdentitySection.module.css'
 
@@ -21,7 +22,7 @@ const swatchClasses: Record<IdentitySwatchId, string> = {
 
 export function IdentitySection({ data }: IdentitySectionProps) {
   return (
-    <>
+    <ProjectSection>
       <SectionHeader
         number={data.number}
         title={data.title}
@@ -58,6 +59,6 @@ export function IdentitySection({ data }: IdentitySectionProps) {
           ))}
         </div>
       </div>
-    </>
+    </ProjectSection>
   )
 }

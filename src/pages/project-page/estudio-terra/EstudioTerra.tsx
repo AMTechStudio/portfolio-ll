@@ -1,5 +1,4 @@
 import { HeroProject } from '@/pages/project-page/components/HeroProject/HeroProject'
-import { ProjectSection } from '@/pages/project-page/components/ProjectSection/ProjectSection'
 import {
   articles,
   designHeader,
@@ -9,11 +8,11 @@ import {
   responsive,
   social,
 } from './data/estudioTerra'
-import { DesignArticles } from './components/DesignArticles'
+import { DesignArticlesSection } from './components/DesignArticlesSection'
 import { IdentitySection } from './components/IdentitySection'
-import { Learnings } from './components/Learnings'
-import { ResponsiveShowcase } from './components/ResponsiveShowcase'
-import { SocialVideo } from './components/SocialVideo'
+import { LearningsSection } from './components/LearningsSection'
+import { ResponsiveShowcaseSection } from './components/ResponsiveShowcaseSection'
+import { SocialVideoSection } from './components/SocialVideoSection'
 
 export function EstudioTerra() {
   return (
@@ -25,25 +24,15 @@ export function EstudioTerra() {
         rotatedLabel={hero.rotatedLabel}
       />
 
-      <ProjectSection>
-        <IdentitySection data={identity} />
-      </ProjectSection>
+      <IdentitySection data={identity} />
 
-      <ProjectSection>
-        <DesignArticles header={designHeader} articles={articles} />
-      </ProjectSection>
+      <DesignArticlesSection header={designHeader} articles={articles} />
 
-      <ProjectSection>
-        <ResponsiveShowcase data={responsive} />
-      </ProjectSection>
+      <ResponsiveShowcaseSection data={responsive} />
 
-      <ProjectSection>
-        <SocialVideo data={social} />
-      </ProjectSection>
+      <SocialVideoSection data={social} />
 
-      <ProjectSection>
-        <Learnings data={learnings} />
-      </ProjectSection>
+      <LearningsSection data={learnings} />
     </>
   )
 }

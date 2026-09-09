@@ -1,14 +1,15 @@
 import { SectionHeader } from '@/components/ui/SectionHeader/SectionHeader'
+import { ProjectSection } from '@/pages/project-page/components/ProjectSection/ProjectSection'
 import type { LearningsData } from '../data/estudioTerra'
-import styles from './Learnings.module.css'
+import styles from './LearningsSection.module.css'
 
-type LearningsProps = {
+type LearningsSectionProps = {
   data: LearningsData
 }
 
-export function Learnings({ data }: LearningsProps) {
+export function LearningsSection({ data }: LearningsSectionProps) {
   return (
-    <>
+    <ProjectSection>
       <SectionHeader number={data.number} title={data.title} description="" />
       <div className={styles.learningGrid}>
         {data.items.map((item, index) => (
@@ -21,6 +22,6 @@ export function Learnings({ data }: LearningsProps) {
           </div>
         ))}
       </div>
-    </>
+    </ProjectSection>
   )
 }

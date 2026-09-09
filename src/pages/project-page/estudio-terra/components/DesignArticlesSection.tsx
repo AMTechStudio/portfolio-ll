@@ -1,21 +1,22 @@
 import { LeftArrowIcon, RightArrowIcon } from '@/components/Icons'
 import { SectionHeader } from '@/components/ui/SectionHeader/SectionHeader'
 import { useCarousel } from '@/hooks/useCarousel'
+import { ProjectSection } from '@/pages/project-page/components/ProjectSection/ProjectSection'
 import type { Article, SectionHeaderData } from '../data/estudioTerra'
-import styles from './DesignArticles.module.css'
+import styles from './DesignArticlesSection.module.css'
 
-type DesignArticlesProps = {
+type DesignArticlesSectionProps = {
   header: SectionHeaderData
   articles: Article[]
 }
 
-export function DesignArticles({ header, articles }: DesignArticlesProps) {
+export function DesignArticlesSection({ header, articles }: DesignArticlesSectionProps) {
   const { sliderRef, canScrollLeft, canScrollRight, scrollLeft, scrollRight } = useCarousel({
     scrollAmount: 'viewport',
   })
 
   return (
-    <>
+    <ProjectSection>
       <SectionHeader number={header.number} title={header.title} description={header.description} />
       <div className={styles.controlButtonContainer}>
         <button
@@ -69,6 +70,6 @@ export function DesignArticles({ header, articles }: DesignArticlesProps) {
           </article>
         ))}
       </div>
-    </>
+    </ProjectSection>
   )
 }
