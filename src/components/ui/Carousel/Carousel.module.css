@@ -1,0 +1,11 @@
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hide shared controls on touch devices where native swipe + snap is the primary input. */
+@media (pointer: coarse) {
+  div.controls {
+    display: none;
+  }
+}
