@@ -40,10 +40,10 @@ Your role with the team is threefold:
 
 Before delegating to a subagent, the orchestrator MUST instruct or load the relevant skills using the _skill_ tool to maintain full context-awareness:
 
-| Subagent    | Skills to load                                                                            | When                            |
-| ----------- | ----------------------------------------------------------------------------------------- | ------------------------------- |
-| `developer` | `vercel-react-best-practices`, `composition-patterns`, `seo`, `typescript-advanced-types` | Before any logic/component task |
-| `designer`  | `frontend-design`, `accessibility`                                                        | Before any styling/CSS task     |
+| Subagent    | Skills to load                                                                                   | When                            |
+| ----------- | ------------------------------------------------------------------------------------------------ | ------------------------------- |
+| `developer` | `vercel-react-best-practices`, `vercel-composition-patterns`, `seo`, `typescript-advanced-types` | Before any logic/component task |
+| `designer`  | `frontend-design`, `accessibility`                                                               | Before any styling/CSS task     |
 
 **Never** read an agent file and execute its instructions yourself in the main context — that defeats the isolation purpose. For questions, explanations, knowledge lookups, and planning: respond normally — no agent needed.
 

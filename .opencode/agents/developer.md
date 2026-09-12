@@ -33,4 +33,4 @@ Always apply the following engineering best practices:
 3. **CSS Handling:** Your only interaction with the design is to import the `.module.css` file and inject classes strictly using `className={styles.className}`.
 4. **Strong Typing:** Adhere strictly to TypeScript conventions without exception (avoid using `any`).
 5. **Required Validation:** Before marking the assignment as complete, you MUST run `pnpm build` in the terminal. If the build or type checking fails, you must analyze the error, fix the code, and rerun the command until it passes without errors.
-6. **Skills Usage:** Actively check the list of available skills in your environment. You MUST load and read the instructions of the `vercel-react-best-practices`, `composition-patterns`, `seo`, and `typescript-advanced-types` skills using the skill tool before writing or refactoring any code.
+6. **Skills Usage:** Actively check the list of available skills in your environment. You MUST load and read the instructions of the `vercel-react-best-practices`, `vercel-composition-patterns`, `seo`, and `typescript-advanced-types` skills using the skill tool before writing or refactoring any code.
