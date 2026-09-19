@@ -26,7 +26,7 @@
 .titleContainer {
   background-color: var(--surface-background);
   border-left: 1px solid var(--stroke-default);
-  padding-left: var(--spacing-xs);
+  padding-left: var(--spacing-sm);
   flex: 1;
   display: flex;
   align-items: center;
@@ -48,12 +48,12 @@
   font-size: var(--font-size-sm);
   color: var(--text-body-secondary);
   line-height: var(--line-height-md);
-  margin: var(--spacing-sm) 0 0;
+  margin: var(--spacing-md) 0 0;
   max-width: 853px;
 }
 
 .description p {
-  margin: 0 0 var(--spacing-sm) 0;
+  margin: 0 0 var(--spacing-md) 0;
 }
 
 .description p:last-child {

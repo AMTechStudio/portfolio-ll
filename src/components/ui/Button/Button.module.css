@@ -6,13 +6,13 @@
   cursor: pointer;
   user-select: none;
   overflow: hidden;
-  border-radius: var(--corner-radius-sm);
+  border-radius: var(--corner-radius-md);
   border: none;
   font-family: var(--font-family-heading);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-karla-bold);
   line-height: 1;
-  padding: var(--spacing-xs) var(--spacing-lg);
+  padding: var(--spacing-sm) var(--spacing-lg);
   text-decoration: none;
   transition:
     opacity 0.2s ease,
@@ -80,5 +80,5 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: var(--spacing-xxs);
+  gap: var(--spacing-xs);
 }

@@ -70,13 +70,13 @@
   /* ==========================================================================
      3. LAYOUT & SPACING (Unidades en Píxeles)
      ========================================================================== */
-  --spacing-xxs: 8px;
-  --spacing-xs: 16px;
-  --spacing-sm: 24px;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
   --spacing-lg: 32px;
   --spacing-xl: 40px;
-  --spacing-xxl: 48px;
-  --spacing-xxxl: 56px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 56px;
   --spacing-4xl: 64px;
   --spacing-5xl: 72px;
   --spacing-6xl: 80px;
@@ -91,13 +91,13 @@
   /* ==========================================================================
      4. BORDER RADIUS (Radios de Esquina)
      ========================================================================== */
-  --corner-radius-xxs: 8px;
-  --corner-radius-xs: 16px;
-  --corner-radius-sm: 24px;
-  --corner-radius-md: 32px;
-  --corner-radius-lg: 40px;
-  --corner-radius-xl: 48px;
-  --corner-radius-xxl: 56px;
+  --corner-radius-xs: 8px;
+  --corner-radius-sm: 16px;
+  --corner-radius-md: 24px;
+  --corner-radius-lg: 32px;
+  --corner-radius-xl: 40px;
+  --corner-radius-2xl: 48px;
+  --corner-radius-3xl: 56px;
 
   /* ==========================================================================
      5. TYPOGRAPHY (Especificaciones de Texto)

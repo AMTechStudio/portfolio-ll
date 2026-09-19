@@ -26,7 +26,7 @@
 
 .textBlock {
   border-left: 1px solid var(--stroke-default);
-  padding-left: var(--spacing-xs);
+  padding-left: var(--spacing-sm);
 }
 
 .greeting {
@@ -57,7 +57,7 @@
 .buttonsContainer {
   display: flex;
   flex-direction: row;
-  gap: var(--spacing-sm);
-  padding-left: var(--spacing-xs);
+  gap: var(--spacing-md);
+  padding-left: var(--spacing-sm);
   margin-top: var(--spacing-xl);
 }

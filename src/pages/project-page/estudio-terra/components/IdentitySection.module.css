@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: var(--spacing-xxxl) var(--spacing-7xl);
+  gap: var(--spacing-3xl) var(--spacing-7xl);
   margin-top: var(--spacing-6xl);
 }
 
@@ -19,7 +19,7 @@
   font-size: var(--font-size-2xl);
   color: var(--text-subtitle-secondary);
   text-align: center;
-  margin: 0 0 var(--spacing-sm);
+  margin: 0 0 var(--spacing-md);
 }
 
 .fontCardCutive {
@@ -27,7 +27,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-bottom: var(--spacing-xxl);
+  margin-bottom: var(--spacing-2xl);
   font-family: var(--font-family-cutive);
 }
 
@@ -41,7 +41,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-bottom: var(--spacing-xxl);
+  margin-bottom: var(--spacing-2xl);
   font-family: var(--font-family-corbel);
 }
 
@@ -59,7 +59,7 @@
   font-size: 48px;
   line-height: 1;
   color: var(--text-subtitle-secondary);
-  margin-bottom: var(--spacing-xxs);
+  margin-bottom: var(--spacing-xs);
 }
 
 .fontLabel {

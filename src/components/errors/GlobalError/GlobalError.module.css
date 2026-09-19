@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-md);
   text-align: center;
   padding: var(--spacing-lg);
   background-color: var(--surface-background);
@@ -45,8 +45,8 @@
   color: var(--color-white-100);
   background-color: var(--button-primary-bg-default);
   border: none;
-  border-radius: var(--corner-radius-sm);
-  padding: var(--spacing-xxs) var(--spacing-xs);
+  border-radius: var(--corner-radius-md);
+  padding: var(--spacing-xs) var(--spacing-sm);
   cursor: pointer;
   text-decoration: none;
   transition: opacity 0.2s ease;
