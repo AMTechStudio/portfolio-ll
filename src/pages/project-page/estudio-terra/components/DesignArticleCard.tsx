@@ -13,7 +13,8 @@ export function DesignArticleCard({ article }: DesignArticlesSectionProps) {
           <h3 className={styles.articleSubtitle}>{article.title}</h3>
           <p className={styles.articleDescription}>{article.description}</p>
         </div>
-        <div className={styles.articleImageBlock}>
+
+        <div className={styles.articleMediaBlock}>
           {article.media.kind === 'image' && (
             <img className={styles.articleImage} src={article.media.src} alt={article.media.alt} />
           )}
