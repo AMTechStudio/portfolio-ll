@@ -6,6 +6,21 @@
   box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+  background-color: var(--text-body-secondary);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--stroke-default);
+  border-radius: var(--corner-radius-xs);
+  opacity: 0.6;
+}
+
 html {
   min-height: 100%;
   /* Improve font rendering */

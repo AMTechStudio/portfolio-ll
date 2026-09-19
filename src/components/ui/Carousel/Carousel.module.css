@@ -1,11 +1,72 @@
 .carouselContainer {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  row-gap: var(--spacing-sm);
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  column-gap: var(--spacing-sm);
+
+  .arrowButton {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition:
+      scale 0.2s,
+      color 0.2s;
+  }
+
+  .arrowButton:hover:not(:disabled) {
+    color: var(--button-primary-bg-active);
+    scale: 1.05;
+  }
+
+  .arrowButton:active {
+    transform: scale(0.95);
+  }
+
+  .arrowButton:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .arrowButton:focus-visible {
+    outline: 2px solid var(--color-secondary-500);
+    outline-offset: 2px;
+  }
+}
+
+.sliders {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-6xl);
+  overflow-x: auto;
+  width: 100%;
+  margin: 0;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /* Hide shared controls on touch devices where native swipe + snap is the primary input. */
 @media (pointer: coarse) {
-  div.controls {
+  .controls {
     display: none;
   }
 }

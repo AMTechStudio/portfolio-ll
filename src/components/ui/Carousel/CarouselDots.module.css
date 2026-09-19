@@ -1,0 +1,85 @@
+/* Dots indicator: 24px accessible hit-area, 8px visual witness. */
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: var(--spacing-xs);
+  padding: 0;
+  list-style: none;
+}
+
+.dot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  min-height: 24px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: var(--corner-radius-xs);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.dot::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: var(--corner-radius-xs);
+  background: var(--color-secondary-300);
+  opacity: 0.65;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.dot:hover::before {
+  opacity: 1;
+  background: var(--color-secondary-400);
+  transform: scale(1.1);
+}
+
+.dot:focus-visible {
+  outline: 2px solid var(--color-secondary-500);
+  outline-offset: 2px;
+}
+
+.dot.dotActive {
+  cursor: default;
+}
+
+.dot.dotActive::before {
+  background: var(--button-primary-bg-active);
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.dot.dotActive:hover::before {
+  background: var(--button-primary-bg-active);
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dot::before,
+  .dot.dotActive::before {
+    transition: none;
+  }
+
+  .dot:hover::before,
+  .dot.dotActive::before,
+  .dot.dotActive:hover::before {
+    transform: none;
+  }
+}
+
+/* Dots stay visible: they are the position witness on touch. */
+@media (pointer: coarse) {
+  .dots {
+    display: flex;
+  }
+}

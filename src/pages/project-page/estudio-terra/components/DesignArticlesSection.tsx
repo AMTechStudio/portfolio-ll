@@ -1,4 +1,3 @@
-import { LeftArrowIcon, RightArrowIcon } from '@/components/Icons'
 import { Carousel } from '@/components/ui/Carousel/Carousel'
 import { SectionHeader } from '@/components/ui/SectionHeader/SectionHeader'
 import { ProjectSection } from '@/pages/project-page/components/ProjectSection/ProjectSection'
@@ -16,16 +15,7 @@ export function DesignArticlesSection({ header, articles }: DesignArticlesSectio
   return (
     <ProjectSection>
       <SectionHeader number={header.number} title={header.title} description={header.description} />
-      <Carousel
-        scrollAmount="viewport"
-        prevLabel="Artículo anterior"
-        nextLabel="Siguiente artículo"
-        prevIcon={<LeftArrowIcon className={styles.articleControlIcon} />}
-        nextIcon={<RightArrowIcon className={styles.articleControlIcon} />}
-        viewportClassName={styles.articlesContainer}
-        controlsClassName={styles.controlButtonContainer}
-        buttonClassName={styles.articleControlButton}
-      >
+      <Carousel className={styles.carouselViewport}>
         {articles.map((article) => (
           <DesignArticleCard article={article} key={article.id} />
         ))}

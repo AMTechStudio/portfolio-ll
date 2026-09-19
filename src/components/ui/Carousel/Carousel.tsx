@@ -1,61 +1,57 @@
 import type { ReactNode } from 'react'
+import { Children } from 'react'
 import { useCarousel } from '@/hooks/useCarousel'
+import { LeftArrowIcon, RightArrowIcon } from '@/components/Icons'
+import { CarouselDots } from './CarouselDots'
+
 import styles from './Carousel.module.css'
 
 type CarouselProps = {
-  scrollAmount?: number | 'viewport'
-  prevLabel?: string
-  nextLabel?: string
-  prevIcon: ReactNode
-  nextIcon: ReactNode
-  viewportClassName?: string
-  controlsClassName?: string
-  buttonClassName?: string
+  className?: string
   children: ReactNode
 }
 
-export function Carousel({
-  scrollAmount = 'viewport',
-  prevLabel = 'Scroll left',
-  nextLabel = 'Scroll right',
-  prevIcon,
-  nextIcon,
-  viewportClassName,
-  controlsClassName,
-  buttonClassName,
-  children,
-}: CarouselProps) {
-  const { sliderRef, canScrollLeft, canScrollRight, scrollLeft, scrollRight } = useCarousel({
-    scrollAmount,
-  })
-
-  const controlsClass = [styles.controls, controlsClassName].filter(Boolean).join(' ')
+export function Carousel({ className, children }: CarouselProps) {
+  const count = Children.count(children)
+  const {
+    sliderRef,
+    canScrollLeft,
+    canScrollRight,
+    activeIndex,
+    scrollLeft,
+    scrollRight,
+    scrollToIndex,
+  } = useCarousel(count)
+  const containerClassName = [styles.carouselContainer, className].filter(Boolean).join(' ')
 
   return (
-    <div className={styles.carouselContainer}>
-      <div className={controlsClass}>
+    <div className={containerClassName}>
+      <div className={styles.controls}>
         <button
           type="button"
-          className={buttonClassName}
+          className={styles.arrowButton}
           onClick={scrollLeft}
           disabled={!canScrollLeft}
-          aria-label={prevLabel}
+          aria-label="Scroll left"
         >
-          {prevIcon}
+          <LeftArrowIcon size={32} className={styles.arrowIcon} />
         </button>
         <button
           type="button"
-          className={buttonClassName}
+          className={styles.arrowButton}
           onClick={scrollRight}
           disabled={!canScrollRight}
-          aria-label={nextLabel}
+          aria-label="Scroll right"
         >
-          {nextIcon}
+          <RightArrowIcon size={32} className={styles.arrowIcon} />
         </button>
       </div>
-      <div ref={sliderRef} className={viewportClassName}>
+
+      <div ref={sliderRef} className={styles.sliders}>
         {children}
       </div>
+
+      <CarouselDots count={count} activeIndex={activeIndex} onSelect={scrollToIndex} />
     </div>
   )
 }
