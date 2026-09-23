@@ -65,39 +65,39 @@
 
   /* Strokes & Borders */
   --stroke-default: var(--color-secondary-400);
-  --border-thin: 1px;
+  --border-thin: 0.0625rem;
 
   /* ==========================================================================
-     3. LAYOUT & SPACING (Unidades en Píxeles)
+     3. LAYOUT & SPACING (Unidades en rem, base 16px)
      ========================================================================== */
-  --spacing-xs: 8px;
-  --spacing-sm: 16px;
-  --spacing-md: 24px;
-  --spacing-lg: 32px;
-  --spacing-xl: 40px;
-  --spacing-2xl: 48px;
-  --spacing-3xl: 56px;
-  --spacing-4xl: 64px;
-  --spacing-5xl: 72px;
-  --spacing-6xl: 80px;
-  --spacing-7xl: 160px;
-  --spacing-8xl: 240px;
-  --spacing-9xl: 320px;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 2.5rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 3.5rem;
+  --spacing-4xl: 4rem;
+  --spacing-5xl: 4.5rem;
+  --spacing-6xl: 5rem;
+  --spacing-7xl: 10rem;
+  --spacing-8xl: 15rem;
+  --spacing-9xl: 20rem;
 
   /* Component-specific spacing */
-  --max-width-section: 1440px;
-  --spacing-learning-grid: 700px;
+  --max-width-section: 90rem;
+  --spacing-learning-grid: 43.75rem;
 
   /* ==========================================================================
      4. BORDER RADIUS (Radios de Esquina)
      ========================================================================== */
-  --corner-radius-xs: 8px;
-  --corner-radius-sm: 16px;
-  --corner-radius-md: 24px;
-  --corner-radius-lg: 32px;
-  --corner-radius-xl: 40px;
-  --corner-radius-2xl: 48px;
-  --corner-radius-3xl: 56px;
+  --corner-radius-xs: 0.5rem;
+  --corner-radius-sm: 1rem;
+  --corner-radius-md: 1.5rem;
+  --corner-radius-lg: 2rem;
+  --corner-radius-xl: 2.5rem;
+  --corner-radius-2xl: 3rem;
+  --corner-radius-3xl: 3.5rem;
 
   /* ==========================================================================
      5. TYPOGRAPHY (Especificaciones de Texto)
@@ -111,32 +111,32 @@
   --font-family-corbel: 'Corbel', sans-serif;
 
   /* Font Sizes */
-  --font-size-xs: 18px;
-  --font-size-sm: 22px;
-  --font-size-md: 24px;
-  --font-size-lg: 32px;
-  --font-size-xl: 39px;
-  --font-size-2xl: 52px;
-  --font-size-3xl: 69px;
-  --font-size-4xl: 93px;
-  --font-size-5xl: 150px;
+  --font-size-xs: 1.125rem;
+  --font-size-sm: 1.375rem;
+  --font-size-md: 1.5rem;
+  --font-size-lg: 2rem;
+  --font-size-xl: 2.4375rem;
+  --font-size-2xl: 3.25rem;
+  --font-size-3xl: 4.3125rem;
+  --font-size-4xl: 5.8125rem;
+  --font-size-5xl: 9.375rem;
 
   /* Line Heights */
-  --line-height-xs: 16px;
-  --line-height-sm: 24px;
-  --line-height-md: 32px;
-  --line-height-lg: 36px;
-  --line-height-xl: 48px;
-  --line-height-2xl: 72px;
-  --line-height-3xl: 56px;
-  --line-height-4xl: 64px;
-  --line-height-5xl: 72px;
-  --line-height-6xl: 80px;
-  --line-height-7xl: 88px;
-  --line-height-8xl: 160px;
+  --line-height-xs: 1rem;
+  --line-height-sm: 1.5rem;
+  --line-height-md: 2rem;
+  --line-height-lg: 2.25rem;
+  --line-height-xl: 3rem;
+  --line-height-2xl: 4.5rem;
+  --line-height-3xl: 3.5rem;
+  --line-height-4xl: 4rem;
+  --line-height-5xl: 4.5rem;
+  --line-height-6xl: 5rem;
+  --line-height-7xl: 5.5rem;
+  --line-height-8xl: 10rem;
 
   /* Letter Spacing */
-  --letter-spacing-normal: 0px;
+  --letter-spacing-normal: 0rem;
 
   /* Font Weights (Solway) */
   --font-weight-solway-light: 300;
@@ -150,5 +150,5 @@
   --font-weight-karla-regular: 400;
   --font-weight-karla-medium: 500;
   --font-weight-karla-semibold: 600;
-  --font-weight-karla-bold: 600; /* Mapeado a 600 según la variable de Figma */
+  --font-weight-karla-bold: 600;
 }

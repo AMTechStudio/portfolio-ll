@@ -1,4 +1,4 @@
-/* Dots indicator: 24px accessible hit-area, 8px visual witness. */
+/* Dots indicator: 1.5rem accessible hit-area, 0.5rem visual witness. */
 .dots {
   display: flex;
   justify-content: center;
@@ -13,8 +13,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 24px;
-  min-height: 24px;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
   margin: 0;
   padding: 0;
   background: transparent;
@@ -26,8 +26,8 @@
 
 .dot::before {
   content: '';
-  width: 8px;
-  height: 8px;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: var(--corner-radius-xs);
   background: var(--color-secondary-300);
   opacity: 0.65;

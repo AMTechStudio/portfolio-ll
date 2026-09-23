@@ -6,7 +6,7 @@
 }
 
 .iphoneVideo {
-  height: 635px;
+  height: 40rem;
   flex-shrink: 0;
   border-radius: var(--corner-radius-md);
   object-fit: cover;

@@ -42,7 +42,7 @@
 
 .navLinkActive {
   composes: navLink;
-  /* color: var(--text-subtitle-secondary); */
+  color: var(--color-primary-500);
   border-bottom-color: var(--color-primary-600);
 }
 
@@ -60,6 +60,6 @@
 }
 
 .flagIcon {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
