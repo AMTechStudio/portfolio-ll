@@ -86,23 +86,23 @@
 }
 
 .swatchLight {
-  background-color: #f8faf0;
+  background-color: var(--color-terra-100);
 }
 
 .swatchWarmGray {
-  background-color: #c7c6c2;
+  background-color: var(--color-terra-200);
 }
 
 .swatchMediumGreen {
-  background-color: #8d9287;
+  background-color: var(--color-terra-300);
 }
 
 .swatchDarkGreen {
-  background-color: #55624c;
+  background-color: var(--color-terra-400);
 }
 
 .swatchVeryDark {
-  background-color: #2f342b;
+  background-color: var(--color-terra-500);
 }
 
 .labelDark {

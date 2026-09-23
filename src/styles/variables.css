@@ -40,6 +40,13 @@
   --color-green-100: #70c053;
   --color-red-100: #ac1519;
 
+  /* Terra (Estudio Terra Brand Palette) */
+  --color-terra-100: #f8faf0;
+  --color-terra-200: #c7c6c2;
+  --color-terra-300: #8d9287;
+  --color-terra-400: #55624c;
+  --color-terra-500: #2f342b;
+
   /* ==========================================================================
      2. SEMANTIC COLOR MAPPINGS (Mapeo de Uso Funcional)
      ========================================================================== */
