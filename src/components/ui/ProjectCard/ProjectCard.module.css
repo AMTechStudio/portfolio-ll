@@ -1,8 +1,8 @@
 .card {
   display: flex;
   width: 100%;
-  padding-inline: var(--spacing-sm) var(--spacing-2xl);
-  padding-block: var(--spacing-sm);
+  padding-inline: var(--space-4) var(--space-12);
+  padding-block: var(--space-4);
   background-color: var(--color-white-100);
   overflow: hidden;
   scroll-snap-align: center;
@@ -23,7 +23,7 @@
   height: 38.5rem;
   flex-shrink: 0;
   overflow: hidden;
-  margin-right: calc(-1 * var(--spacing-md));
+  margin-right: calc(-1 * var(--space-6));
 }
 
 .imageContainer::after {
@@ -47,14 +47,14 @@
   align-items: flex-end;
   flex: 1;
   min-width: 0;
-  padding-top: var(--spacing-3xl);
+  padding-top: var(--space-14);
   z-index: 1;
 }
 
 .infoContainer {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
+  gap: var(--space-6);
   width: 100%;
 }
 
@@ -89,8 +89,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  gap: var(--spacing-xs);
-  margin-top: var(--spacing-md);
+  gap: var(--space-2);
+  margin-top: var(--space-6);
 }
 
 .ctaLine {

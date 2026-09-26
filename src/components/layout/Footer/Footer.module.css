@@ -4,7 +4,7 @@
 }
 
 .navigation {
-  padding: var(--spacing-3xl) var(--spacing-6xl);
+  padding: var(--space-14) var(--space-20);
 }
 
 .menu {
@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--spacing-xs);
+  gap: var(--space-2);
 }
 
 .socialLabel {
@@ -29,7 +29,7 @@
 
 .socialIcons {
   display: flex;
-  gap: var(--spacing-xs);
+  gap: var(--space-2);
 }
 
 .socialLink {
@@ -45,13 +45,13 @@
 .links {
   display: flex;
   text-align: center;
-  gap: var(--spacing-2xl);
+  gap: var(--space-12);
 }
 
 .linkColumn {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xs);
+  gap: var(--space-2);
   list-style: none;
   padding: 0;
   margin: 0;
@@ -74,7 +74,7 @@
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid var(--color-white-100);
-  padding: var(--spacing-sm) var(--spacing-6xl);
+  padding: var(--space-4) var(--space-20);
 }
 
 .creditsText {

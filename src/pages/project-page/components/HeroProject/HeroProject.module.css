@@ -1,11 +1,11 @@
 .container {
   display: flex;
-  padding: 0 var(--spacing-6xl);
+  padding: 0 var(--space-20);
   align-items: flex-end;
   justify-content: space-evenly;
   width: 100%;
   margin: 0 auto;
-  padding-top: var(--spacing-xl);
+  padding-top: var(--space-10);
 }
 
 .leftColumn {
@@ -44,7 +44,7 @@
 .textContainer {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-2xl);
+  gap: var(--space-12);
   width: 35rem;
   height: 38.5rem;
 }

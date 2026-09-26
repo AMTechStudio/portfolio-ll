@@ -1,7 +1,7 @@
 .networkVideo {
   width: 50rem;
   height: 36rem;
-  margin: var(--spacing-6xl) auto 0;
+  margin: var(--space-20) auto 0;
   display: block;
   object-fit: cover;
 }

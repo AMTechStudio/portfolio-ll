@@ -1,8 +1,8 @@
 .responsiveLayout {
   display: flex;
   align-items: flex-start;
-  gap: var(--spacing-lg);
-  margin-top: var(--spacing-6xl);
+  gap: var(--space-8);
+  margin-top: var(--space-20);
 }
 
 .iphoneVideo {

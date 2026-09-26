@@ -4,14 +4,16 @@
   width: 100%;
   max-width: 81.25rem;
   margin: 0 auto;
-  row-gap: var(--spacing-sm);
+  row-gap: var(--space-4);
+  container-type: inline-size;
+  container-name: carousel;
 }
 
 .controls {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  column-gap: var(--spacing-sm);
+  column-gap: var(--space-4);
 
   .arrowButton {
     border-radius: 50%;
@@ -51,7 +53,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: var(--spacing-6xl);
+  gap: var(--space-20);
   overflow-x: auto;
   width: 100%;
   margin: 0;
@@ -68,5 +70,12 @@
 @media (pointer: coarse) {
   .controls {
     display: none;
+  }
+}
+
+/* Shrink gap and center controls when the carousel container is narrow. */
+@container carousel (max-width: 48rem) {
+  .sliders {
+    gap: var(--space-8);
   }
 }

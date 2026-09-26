@@ -9,12 +9,12 @@
 .articleBody {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xl);
+  gap: var(--space-10);
 
   .articleTextBlock {
     width: 100%;
     border-right: var(--border-thin) solid var(--stroke-default);
-    padding-right: var(--spacing-md);
+    padding-right: var(--space-6);
     text-align: right;
 
     .articleSubtitle {
@@ -22,7 +22,7 @@
       font-weight: var(--font-weight-karla-medium);
       font-size: var(--font-size-2xl);
       color: var(--text-subtitle-secondary);
-      margin: 0 0 var(--spacing-sm);
+      margin: 0 0 var(--space-4);
       line-height: 1.1;
     }
 

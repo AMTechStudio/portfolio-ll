@@ -1,7 +1,12 @@
 .section {
-  padding: 0 var(--spacing-6xl);
+  padding: 0 var(--space-20);
 }
 
 .content {
-  padding: 7.5rem 0;
+  padding-block: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-10);
+  container-type: inline-size;
+  container-name: project;
 }

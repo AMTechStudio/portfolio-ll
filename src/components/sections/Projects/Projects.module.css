@@ -1,22 +1,22 @@
 .section {
   width: 100%;
   margin: 0 auto;
-  padding: 0 var(--spacing-6xl);
+  padding: 0 var(--space-20);
   background-color: var(--surface-background);
 }
 
 .container {
   width: 100%;
   max-width: 80rem;
-  margin-block: 0 var(--spacing-xl);
+  margin-block: 0 var(--space-10);
   margin-inline: auto;
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-3xl);
+  gap: var(--space-14);
 }
 
 .titleContainer {
-  padding: var(--spacing-sm) var(--spacing-2xl);
+  padding: var(--space-4) var(--space-12);
 }
 
 .title {
